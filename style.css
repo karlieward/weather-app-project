@@ -1,0 +1,50 @@
+h1 {
+  padding-top: 20px;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: bolder;
+}
+p {
+  color: gray;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 100px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: orange;
+}
+
+#faren {
+  text-align: right;
+}
+
+#celc {
+  text-align: left;
+}
+
+.row {
+  padding-top: 5px;
+}
+
+.card-body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#search {
+  max-width: 485px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.weather-app {
+  max-width: 500px;
+  border: 1px solid;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
