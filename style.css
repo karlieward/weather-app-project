@@ -11,9 +11,9 @@ h1 {
 p {
   color: gray;
   text-align: left;
-  padding-left: 10px;
   font-size: 16px;
   font-weight: 400;
+  padding-left: 10px;
 }
 h2 {
   color: gray;
@@ -21,6 +21,22 @@ h2 {
   padding-left: 10px;
   font-size: 16px;
   font-weight: 400;
+}
+span {
+  color: gray;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 30px;
+}
+
+#feels-like {
+  font-size: 25px;
+  color: rgb(78, 78, 78);
+}
+
+#description {
+  text-transform: capitalize;
 }
 #temperature {
   font-size: 100px;
