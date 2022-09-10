@@ -46,6 +46,19 @@ span {
   text-align: center;
 }
 
+#celsius-link {
+  text-decoration: none;
+  font-size: 16px;
+}
+#fahrenheit-link {
+  text-decoration: none;
+  font-size: 16px;
+}
+.display-temperature .active {
+  color: rgb(78, 78, 78);
+  cursor: default;
+}
+
 .units {
   font-size: 16px;
 }
