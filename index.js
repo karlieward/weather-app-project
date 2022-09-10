@@ -74,6 +74,10 @@ function convertToFahrenheit(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+
+  let feelsLikeFahren = (feelsLikeTemp * 9) / 5 + 32;
+  let feelsLikeDisplay = document.querySelector("#feels_like");
+  feelsLikeDisplay.innerHTML = Math.round(feelsLikeFahren);
 }
 
 function convertToCelsius(event) {
@@ -82,10 +86,13 @@ function convertToCelsius(event) {
   fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
+
+  let feelsLikeDisplay = document.querySelector("#feels_like");
+  feelsLikeDisplay.innerHTML = Math.round(feelsLikeTemp);
 }
 
 let celsiusTemperature = null;
-
+let feelsLikeTemp = response.data.main.feels_like;
 let dayAndTime = document.querySelector("#date");
 let date = new Date();
 dayAndTime.innerHTML = formatDate(date);
