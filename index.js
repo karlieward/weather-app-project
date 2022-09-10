@@ -28,12 +28,6 @@ function showTemp(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  document.querySelector("#maximum").innerHTML = Math.round(
-    response.data.main.temp_max
-  );
-  document.querySelector("#minimum").innerHTML = Math.round(
-    response.data.main.temp_min
-  );
 }
 
 function searchCity(city) {
@@ -62,12 +56,16 @@ function getCurrentLocation(event) {
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+  fahrenheitLink.classList.add("active");
+  celciusLink.classList.remove("active");
   temperatureElement.innerHTML = 89;
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+  fahrenheitLink.classList.remove("active");
+  celciusLink.classList.add("active");
   temperatureElement.innerHTML = 23;
 }
 

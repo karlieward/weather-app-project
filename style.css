@@ -1,37 +1,45 @@
 h1 {
-  padding-top: 20px;
-  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 35px;
   margin-bottom: 0;
   padding-bottom: 0;
   font-weight: bolder;
+  text-align: left;
+  color: rgb(78, 78, 78);
 }
 p {
   color: gray;
-  margin: 0 auto;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
 }
-
 h2 {
+  color: gray;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+#temperature {
   font-size: 100px;
   padding-top: 0;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 
-#faren {
-  text-align: right;
-}
-
-#celc {
-  text-align: left;
-}
-
-.row {
-  padding-top: 5px;
+.units {
+  font-size: 16px;
 }
 
 .card-body {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+#weather-icon {
+  width: 75px;
 }
 
 #search {

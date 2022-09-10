@@ -11,87 +11,96 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css"> 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="container text-center">
       <div class="weather-app">
-        <h1 id = city></h1>
-        <p id = date></p>
-        <h2 class="temperature" id = temperature>89</h2> 
-        <div>
-          <span class="units">
-                  <a href="#" id="celsius-link">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a>
-                </span>
-        </div>
         <div class="row">
-          <div class="col" id = faren>max: <span id = maximum>94</span>°</div>
-          <div class="col" id = celc>min: <span id = minimum>56</span>°</div>
-        </div>
-            <div class="card-body">
-            <div class="row">
-              <div class="col">Thu</div>
-                <div class="col">Fri</div>
-                 <div class="col">Sat</div>
-                 <div class="col">Sun</div>
-                <div class="col">Mon</div>
-            
-            </div>
-            <div class="row">
-              <div class="col"> ☀️ </div>
-                <div class="col">☀️</div>
-                 <div class="col">☀️</div>
-                 <div class="col">☀️</div>
-                <div class="col">☀️</div>
-            </div>
-            <div class="row">
-              <div class="col">94°</div>
-                <div class="col">93°</div>
-                 <div class="col">95°</div>
-                 <div class="col">97°</div>
-                <div class="col">91°</div>
-            </div>
-            </div>
-         <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="search"
-                placeholder="Type a city.."
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-                class="form-control shadow-sm"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary shadow-sm"
-              />
-            </div>
-            <div class="col-3">
-              <button class="btn btn-success shadown-sm w-100"
-              id = current-location-button>
-                Current
-              </button>
-            </div>
+          <div class="col-4">
+            <h1 id="city"></h1>
+            <p id="date"></p>
+            <h2>Description</h2>
+            <h2>Feels like 19°</h2>
+            <img
+              id="weather-icon"
+              src="https://www.svgheart.com/wp-content/uploads/2020/07/sun-summer-free-svg-cutting-file.png"
+              alt="weather icon"
+            />
           </div>
-        </form>
+            <div class="col-8">
+              <div class="display-temperature">
+                <strong class="temperature" id="temperature">89</strong>
+                <span class="units">
+                  <a href="#" id="celsius-link">°C</a> |
+                   <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+              </div> 
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">Thu</div>
+                <div class="col">Fri</div>
+                <div class="col">Sat</div>
+                <div class="col">Sun</div>
+                <div class="col">Mon</div>
+              </div>
+              <div class="row">
+                <div class="col">☀️</div>
+                <div class="col">☀️</div>
+                <div class="col">☀️</div>
+                <div class="col">☀️</div>
+                <div class="col">☀️</div>
+              </div>
+              <div class="row">
+                <div class="col">94°</div>
+                <div class="col">93°</div>
+                <div class="col">95°</div>
+                <div class="col">97°</div>
+                <div class="col">91°</div>
+              </div>
+            </div>
+            <form class="search-form" id="search-form">
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="search"
+                    placeholder="Type a city.."
+                    autofocus="on"
+                    autocomplete="off"
+                    id="city-input"
+                    class="form-control shadow-sm"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="form-control btn btn-primary shadow-sm"
+                  />
+                </div>
+                <div class="col-3">
+                  <button
+                    class="btn btn-success shadown-sm w-100"
+                    id="current-location-button"
+                  >
+                    Current
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
-    <p class="coded-by"> 
+    <p class="coded-by">
       <a href="https://github.com/karlieward/weather-app-project">
         Open-source code
-      </a> by Karlie Ward
+      </a>
+      by Karlie Ward
     </p>
-      <script src='index.js'></script>
+    <script src="index.js"></script>
   </body>
 </html>
