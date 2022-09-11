@@ -30,6 +30,9 @@ function showTemp(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#wind-speed").innerHTML = Math.round(
+    response.data.wind.speed
+  );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#feels-like").innerHTML = Math.round(
