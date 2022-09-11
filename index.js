@@ -92,7 +92,7 @@ function convertToCelsius(event) {
 }
 
 let celsiusTemperature = null;
-let feelsLikeTemp = response.data.main.feels_like;
+
 let dayAndTime = document.querySelector("#date");
 let date = new Date();
 dayAndTime.innerHTML = formatDate(date);
@@ -109,4 +109,4 @@ celsiusLink.addEventListener("click", convertToCelsius);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Berlin");
+searchCity("berlin");
