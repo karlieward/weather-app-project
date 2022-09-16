@@ -11,7 +11,7 @@ h1 {
 p {
   color: gray;
   text-align: left;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   padding-left: 10px;
 }
@@ -44,19 +44,6 @@ span {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-}
-
-#celsius-link {
-  text-decoration: none;
-  font-size: 16px;
-}
-#fahrenheit-link {
-  text-decoration: none;
-  font-size: 16px;
-}
-.display-temperature .active {
-  color: rgb(78, 78, 78);
-  cursor: default;
 }
 
 .units {
