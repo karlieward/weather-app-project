@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -47,21 +48,8 @@
               </span>
             </div>
           </div>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-2">
-                <div class="forcast-days">Thu</div>
-                <img
-                  src="http://openweathermap.org/img/wn/50d@2x.png"
-                  alt=""
-                  width="42"
-                />
-                <div class="forcast-Temps">
-                  <span class="forcast-temps-max"> 18° </span>
-                  <span class="forcast-temps-min"> 12° </span>
-                </div>
-              </div>
-            </div>
+          <div class="weather-forecast" id="forecast">
+          </div>
             <form class="search-form" id="search-form">
               <div class="row">
                 <div class="col-6">
