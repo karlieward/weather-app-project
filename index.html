@@ -20,30 +20,31 @@
     <div class="container text-center">
       <div class="weather-app">
         <div class="row">
-          <div class="col-6">
+          <div class="col-5">
             <h1 id="city"></h1>
-            <p class="lastUpdated">Last updated:</p>
-            <span id="date"></span>     
-            <div>
-              <span>Wind Speed:</span>
-              <span id="wind-speed">45</span>
-              <span>m/h</span>
-            </div>
-            <div>
-              <span> Feels like: </span>
-              <strong id="feels-like"> 19° </strong>
-            </div>
-            <h2 id="description">Description</h2>
+            <p id="date"></p> 
+            <p id="description">Description</p>
             <img
               id="weather-icon"
               src="https://www.svgheart.com/wp-content/uploads/2020/07/sun-summer-free-svg-cutting-file.png"
               alt="weather icon"
-            />
+            /> 
+            <div class="windSpeedDiv">
+              <span class="windSpeed">Wind Speed:</span>
+              <span id="wind-speed">45</span>
+              <span class="mph">m/h</span>
+            </div>
+            <div class="feelsLikeDiv">
+              <span class="feelsLike">Feels Like:</span>
+              <span id="feels-like"> 19° </span>
+              <strong>°</strong>
+            </div>
+            <br>
           </div>
-          <div class="col-6">
+          <div class="col-7">
             <div class="display-temperature">
               <strong class="temperature" id="temperature">89</strong>
-              <span>
+              <span class="fahren">
                 °F
               </span>
             </div>
@@ -52,26 +53,27 @@
           </div>
             <form class="search-form" id="search-form">
               <div class="row">
-                <div class="col-6">
+                <div class="col-8">
                   <input
                     type="search"
                     placeholder="Type a city.."
                     autofocus="on"
                     autocomplete="off"
+                    oneclick="cleartext()"
                     id="city-input"
                     class="form-control shadow-sm"
                   />
                 </div>
-                <div class="col-3">
+                <div class="col-2" id="search-button">
                   <input
                     type="submit"
                     value="Search"
-                    class="form-control btn btn-primary shadow-sm"
+                    class="form-control btn btn-dark shadow-sm w-100"
                   />
                 </div>
-                <div class="col-3">
+                <div class="col-2" id="current-location-column" class="text-nowrap">
                   <button
-                    class="btn btn-success shadown-sm w-100"
+                    class="btn btn-secondary shadown-sm w-100"
                     id="current-location-button"
                   >
                     Current
@@ -81,14 +83,15 @@
             </form>
           </div>
         </div>
-      </div>
-    </div>
     <p class="coded-by">
       <a href="https://github.com/karlieward/weather-app-project">
         Open-source code
       </a>
       by Karlie Ward
     </p>
+   </div>
+  </div>
+
     <script src="index.js"></script>
   </body>
 </html>
