@@ -12,7 +12,10 @@ strong {
   color: black;
   font-size: 15px;
 }
-
+.weather-app-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
 .weather-app {
   max-width: 500px;
   border: 1px solid;
@@ -166,7 +169,7 @@ strong {
 
 .coded-by {
   padding-top: 8px;
-  padding-left: 17px;
+  padding-left: 5px;
   text-align: left;
   font-size: 15px;
   color: rgb(65, 65, 65);
