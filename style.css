@@ -104,7 +104,8 @@ strong {
 }
 
 #weather-icon {
-  width: 75px;
+  width: 100px;
+  padding-left: 30px;
 }
 #forecast {
   padding-left: 17px;
