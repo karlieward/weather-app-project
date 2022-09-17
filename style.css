@@ -40,10 +40,21 @@ strong {
   color: rgb(141, 141, 141);
   font-size: 15px;
 }
+
+#description {
+  text-transform: capitalize;
+  color: rgb(141, 141, 141);
+  font-size: 15px;
+  padding-left: 30px;
+  margin: 0px;
+}
+
 #weather-icon {
   display: block;
   margin-left: auto;
   margin-right: 80px;
+  width: 100px;
+  padding-left: 30px;
 }
 
 .windSpeedDiv {
@@ -74,17 +85,11 @@ strong {
   font-weight: 700;
 }
 
-#description {
-  text-transform: capitalize;
-  color: rgb(141, 141, 141);
-  font-size: 15px;
-  padding-left: 30px;
-  margin: 0px;
-}
 #temperature {
   font-size: 150px;
   display: block;
   text-align: center;
+  vertical-align: middle;
 }
 
 .fahren {
@@ -96,20 +101,11 @@ strong {
   bottom: 165px;
 }
 
-.units {
-  display: block;
-  font-size: 16px;
-}
-
 .card-body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-#weather-icon {
-  width: 100px;
-  padding-left: 30px;
-}
 #forecast {
   padding-left: 17px;
   padding-right: 17px;
@@ -161,10 +157,6 @@ strong {
   text-align: center;
   padding-left: 6px;
   padding-right: 10px;
-}
-
-.nowrap {
-  padding-right: 4px;
 }
 
 .coded-by {
